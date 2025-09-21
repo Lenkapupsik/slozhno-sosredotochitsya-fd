@@ -14,7 +14,6 @@
   display: none;
 }
 
-
 @media (prefers-color-scheme: light) {
   :root {
     --bg-image: url(./../images/cover-image-light.png); 
@@ -26,6 +25,7 @@
     --content-font-color:#353430; 
     --hover-color-border:rgba(50, 49, 45, 0.40); 
   }
+
   .header__text-decor {
     display: none;
   }
