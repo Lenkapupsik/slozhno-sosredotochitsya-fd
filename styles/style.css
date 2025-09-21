@@ -1,6 +1,6 @@
 .page {
-  object-fit: cover;
-  object-position: center;
+  background-size: cover;
+  background-position: center;
   color: var(--content-font-color, #F1B2CE);
   font-family: var(--content-font-family, "IBM Plex Mono", sans-serif);
   font-size: var(--content-font-size, 18px);
@@ -93,7 +93,6 @@
   text-transform: lowercase;
   background-color: transparent;
   cursor: pointer;
-
 }
 
 .header__theme-menu-button_active {
@@ -223,7 +222,7 @@
 .footer__title {
   color: var(--title-color,#DB00FF);
   font-weight: var(--font-weight-bold, 700);
-  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-size: var(--logo-size, clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem));
   font-style: normal;
   line-height: 82.5%;  
   text-shadow: 2px 2px 0 var(--accent-color,#FF0070);
@@ -253,13 +252,9 @@
 
   .header__title {
     margin-inline-start: -20px;
-    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem); 
+    font-size: var(--logo-size, clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem)); 
   }
   
-  .header__paragraph {
-    max-inline-size: 491px;
-  }
-
   .content {
     gap: 80px;
     padding-inline: 20px;
@@ -331,7 +326,7 @@
   }
 
   .footer__title {
-    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem); 
+    font-size: var(--logo-size, clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem));
   }
 }
 
