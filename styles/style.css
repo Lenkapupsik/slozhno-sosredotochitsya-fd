@@ -95,6 +95,7 @@
   cursor: pointer;
 
 }
+
 .header__theme-menu-button_active {
   outline: 1px solid var(--content-title-color,#FF0070);
   pointer-events: none;
@@ -133,6 +134,7 @@
   line-height: 130%;
   max-inline-size: 364px; 
 }
+
 .content {
   display: flex;
   flex-direction: column;
@@ -153,6 +155,7 @@
   font-style: normal;
   line-height: 130%;
 }
+
 .content__card {
   display: flex;
   flex-direction: column;
