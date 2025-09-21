@@ -1,12 +1,39 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
 :root.theme-light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  --bg-image: url(./../images/cover-image-light.png); /*картинка фона страницы */
+  --bg-color:#FFF1F7; /*фоновый цвет сраницы*/
+  --title-color:#FFC2E6; /*цвет  заголовка в шапке и в подвале*/
+  --accent-color: #FF8DCB; /*цвет тени  заголовка шапки и подвала, надписи REC и 
+  декоративной точки, фона заголовка карточки, тени ссылки*/ 
+  --decor-font-color:#353430; /*цвет заголовка карточки*/
+  --content-title-color:#353430; /*цвет декоративных уголков, кнопок, заголовка секции*/
+  --content-font-color:#353430; /*цвет текста параграфа, выделения ссылки в состоянии фокус и hover*/
+  --hover-color-border:rgba(50, 49, 45, 0.40); /*цвет веделения кнопки в состоянии hover*/
 }
+
+.theme-light .header__text-decor {
+  display: none;
+}
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg-image: url(./../images/cover-image-light.png); 
+    --bg-color:#FFF1F7;
+    --title-color:#FFC2E6; 
+    --accent-color: #FF8DCB; 
+    --decor-font-color:#353430; 
+    --content-title-color:#353430; 
+    --content-font-color:#353430; 
+    --hover-color-border:rgba(50, 49, 45, 0.40); 
+  }
+  .header__text-decor {
+    display: none;
+  }
+}
+
+
+
+
+
+
+
